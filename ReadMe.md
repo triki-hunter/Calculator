@@ -32,5 +32,7 @@ try {
 
 ## Notes
 - Handles integers only.
-- Watch out for division by zero.
+
+![Test Status](https://github.com/triki-hunter/Calculator/actions/workflows/ci.yml/badge.svg)
+
 
