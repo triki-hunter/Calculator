@@ -1,5 +1,4 @@
 [![Java CI](https://github.com/triki-hunter/Calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/triki-hunter/Calculator/actions/workflows/ci.yml)
-
 # Calculator Class
 
 ## Overview
