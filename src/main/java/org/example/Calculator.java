@@ -23,4 +23,12 @@ public class Calculator {
         }
         return a / b;
     }
+
+    // calculate square root
+    public double squareRoot(double a)  {
+        if (a < 0) {
+            System.out.println("Cannot calculate square root of a negative number.");
+        }
+        return Math.sqrt(a);
+    }
 }

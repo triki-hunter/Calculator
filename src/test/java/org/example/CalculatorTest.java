@@ -47,4 +47,16 @@ class CalculatorTest {
         }
         assertThrows(DivideByZeroException.class, () -> calculator.divide(12, 0));
     }
+    @Test
+    void squareRoot() {
+        assertEquals(5.0, calculator.squareRoot(25.0), 0.0001);
+        assertEquals(3.0, calculator.squareRoot(9.0), 0.0001);
+        assertEquals(0.0, calculator.squareRoot(0.0), 0.0001);
+
+        // Test negative numbers
+        // Since the method returns NaN for negative inputs (and does not throw an exception), assert this behavior
+        double result = calculator.squareRoot(-9.0);
+        assertTrue(Double.isNaN(result), "Expected NaN for square root of a negative number.");
+    }
 }
+
