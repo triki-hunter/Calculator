@@ -28,7 +28,7 @@ class CalculatorTest {
 
     @Test
     void multiply() {
-        assertEquals(28, calculator.multiply(3, 9));
+        assertEquals(27, calculator.multiply(3, 9));
         assertNotEquals(27, calculator.multiply(3, 8));
     }
 
