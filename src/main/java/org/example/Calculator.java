@@ -44,4 +44,11 @@ public class Calculator {
     public double cosinus(double radians) {
         return Math.cos(radians);
     }
+
+    public String toBinaryString(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Number must be a natural number (non-negative).");
+        }
+        return Integer.toBinaryString(number);
+    }
 }

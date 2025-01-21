@@ -84,5 +84,12 @@ class CalculatorTest {
         assertEquals(0.0, calculator.cosinus(3 * Math.PI / 2), 0.0001);
     }
 
+    @Test
+    void toBinaryString() {
+        assertEquals("0", calculator.toBinaryString(0));
+        assertEquals("1", calculator.toBinaryString(1));
+        assertEquals("1010", calculator.toBinaryString(10));
+        assertEquals("11111111", calculator.toBinaryString(255));
+    }
 }
 
