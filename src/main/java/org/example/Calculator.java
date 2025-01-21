@@ -36,4 +36,12 @@ public class Calculator {
     public double powerOf(double base, double exponent) {
         return Math.pow(base, exponent);
     }
+
+    public double sinus(double radians) {
+        return Math.sin(radians);
+    }
+
+    public double cosinus(double radians) {
+        return Math.cos(radians);
+    }
 }

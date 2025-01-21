@@ -68,5 +68,21 @@ class CalculatorTest {
         assertEquals(1.0, calculator.powerOf(7.0, 0.0), 0.0001);
     }
 
+    @Test
+    void sinus() {
+        assertEquals(0.0, calculator.sinus(0.0), 0.0001);
+        assertEquals(1.0, calculator.sinus(Math.PI / 2), 0.0001);
+        assertEquals(0.0, calculator.sinus(Math.PI), 0.0001);
+        assertEquals(-1.0, calculator.sinus(3 * Math.PI / 2), 0.0001);
+    }
+
+    @Test
+    void cosinus() {
+        assertEquals(1.0, calculator.cosinus(0.0), 0.0001);
+        assertEquals(0.0, calculator.cosinus(Math.PI / 2), 0.0001);
+        assertEquals(-1.0, calculator.cosinus(Math.PI), 0.0001);
+        assertEquals(0.0, calculator.cosinus(3 * Math.PI / 2), 0.0001);
+    }
+
 }
 
