@@ -58,5 +58,15 @@ class CalculatorTest {
         double result = calculator.squareRoot(-9.0);
         assertTrue(Double.isNaN(result), "Expected NaN for square root of a negative number.");
     }
+
+    @Test
+    void powerOf() {
+        assertEquals(8.0, calculator.powerOf(2.0, 3.0), 0.0001);
+        assertEquals(1.0, calculator.powerOf(5.0, 0.0), 0.0001);
+        assertEquals(16.0, calculator.powerOf(4.0, 2.0), 0.0001);
+        assertEquals(0.25, calculator.powerOf(2.0, -2.0), 0.0001);
+        assertEquals(1.0, calculator.powerOf(7.0, 0.0), 0.0001);
+    }
+
 }
 

@@ -31,4 +31,8 @@ public class Calculator {
         }
         return Math.sqrt(a);
     }
+    // calculate power
+    public double powerOf(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
 }
